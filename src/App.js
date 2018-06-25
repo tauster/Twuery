@@ -50,7 +50,7 @@ class App extends Component {
       this.setState({searchTerm: searchTerms});
       
       // Forming express API endpoint.
-      const urlStr = "http://ec2-18-188-141-233.us-east-2.compute.amazonaws.com:3001/api/q=" + searchTerms.replace(' ', '+');
+      const urlStr = EC2Instance + searchTerms.replace(' ', '+');
       
       // Fading out results panel from previous session.
       $(".resultsPanel").fadeOut();
