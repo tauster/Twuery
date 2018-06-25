@@ -216,7 +216,7 @@ class App extends Component {
             <br/>
             
             <div className="viz"><Fade>
-              <h2>Twitter's <b>mood</b> about <i>{this.state.searchTerm}</i></h2>
+              <h2>Twitter&apos;s <b>mood</b> about <i>{this.state.searchTerm}</i></h2>
               {this.state.mood}
               </Fade></div>
 
