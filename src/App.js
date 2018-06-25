@@ -167,7 +167,7 @@ class App extends Component {
             <div className="infoOverlay">
               <p>
                 Twuery takes your search terms and looks at what’s being said currently on Twitter.
-                A machine learning model then gives you an idea of Twitter's current thoughts on the topic.
+                A machine learning model then gives you an idea of Twitter&apos;s current thoughts on the topic.
                 Results will vary with time as Twuery looks at the most recent thoughts on Twitter.
                 <br/>
                 The results given are not associated with the thoughts of Twuery or toasted.ai.
