@@ -1,0 +1,177 @@
+/* Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #474747;
+}
+
+/* Nav */
+.navBtn {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #474747;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.navBtn:hover {
+  color: #00ACED;
+}
+
+/* Main Container */
+.container {
+  padding-top: 80px;
+}
+
+/* Twuery Title */
+.title {
+  font-family: 'Lobster', cursive;
+  font-size: 72px;
+  color: #00ACED;
+}
+
+/* Search Bar Input */
+.form-control {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Search Button */
+.btn {
+  border-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Info Panel */
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.infoOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+/* Loader */
+.loader {
+  border: 8px solid #F3F3F3; /* Light grey */
+  border-top: 8px solid #00ACED; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaderText {
+  opacity: 1;
+  animation: fade 2s linear infinite;
+  display: none;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+/* Results Panel */
+.resultsPanel {
+  display: none;
+}
+
+/* Word Cloud */
+.canvas-wrap { position:relative }
+
+.app-outer {
+	align-items: center; 
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	left: 0;
+	padding: 20px 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.app-inner {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	max-width: 1000px;
+	width: 100%;
+}
+
+.tag-cloud {
+	flex: 1;
+}
+
+.tag-cloud > div {
+	transition: 1.4s;
+}
+
+/* Visual Panels */
+.viz {
+  padding-bottom: 50px;
+}
+
+/* Footer */
+.toasted {
+  font-family: "PT Mono", monospace;
+}
+
+/* React */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
